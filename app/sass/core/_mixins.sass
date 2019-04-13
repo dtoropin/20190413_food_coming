@@ -1,0 +1,23 @@
+=font-face($font-family, $file-path, $weight: normal, $style: normal)
+	@font-face
+		font-family: $font-family
+		font-weight: $weight
+		font-style: $style
+		src: url('#{$file-path}.eot')
+		src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), url('#{$file-path}.woff') format('woff'), url('#{$file-path}.woff2') format('woff2'), url('#{$file-path}.ttf') format('truetype')
+
+=clearfix()
+	&::after
+		display: block
+		content: ""
+		clear: both
+
+@function em($target, $context: $font_base)
+	@if $target == 0
+		@return 0
+	@return $target / $context + 0em
+
+@function cp($target, $context: $content_width)
+	@if $target == 0
+		@return 0
+	@return $target / $context * 100%
