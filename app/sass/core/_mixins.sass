@@ -12,7 +12,7 @@
 		content: ""
 		clear: both
 
-@function em($target, $context: $font_base)
+@function em($target, $context: $font_base_size)
 	@if $target == 0
 		@return 0
 	@return $target / $context + 0em

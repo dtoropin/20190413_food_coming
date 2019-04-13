@@ -23,7 +23,6 @@
 	},
 	"dependencies": {
 		"gulp-cli": "^2.0.1",
-		"jquery": "^3.2.1",
 		"normalize.css": "^8.0.1"
 	}
 }
