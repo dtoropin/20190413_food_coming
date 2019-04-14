@@ -2,7 +2,9 @@
 
 	var init = function () {
 		_inverseWorld('.content__header');
-		_countdown('2019.04.15');
+		// date (2019.04.15 || 2019-04-15 || 2019/04/15)
+		// for firefox date not (2019.04.15)
+		_countdown('2019/04/15 00:00:00');
 	};
 
 	var _inverseWorld = function (selector) {
